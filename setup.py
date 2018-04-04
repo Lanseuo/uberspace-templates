@@ -81,7 +81,7 @@ Meta
 
 setup(
     name="uberspace-templates",
-    version="1.0.0",
+    version="1.0.1",
     description="Setup applications and websites in seconds using this cli with many templates.",
     long_description=long_description,
     license="MIT",

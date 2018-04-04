@@ -19,7 +19,7 @@ uberspace-templates init flask my-application
 
 ### Templates
 
-### Flask
+#### Flask
 
 ```
 uberspace-templates init flask my-application
@@ -30,7 +30,7 @@ uberspace-templates init flask my-application
 - Setup domain and renew LetsEncrypt
 - Setup reverse proxy
 
-### Vue.js
+#### Vue.js
 
 ```
 uberspace-templates init vuejs my-application
@@ -40,7 +40,7 @@ uberspace-templates init vuejs my-application
 - Setup domain and renew LetsEncrypt
 - Setup Apache configuration
 
-### Website
+#### Website
 
 ```
 uberspace-templates init website my-application

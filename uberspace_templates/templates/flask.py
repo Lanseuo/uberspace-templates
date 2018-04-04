@@ -85,7 +85,7 @@ exec multilog t ./main""")
               name + " /home/{}/service/".format(utils.get_username()) + name)
 
     utils.add_uberspace_domain(domain)
-    utils.add_htaccess(reverse_proxy_port=port)
+    utils.add_htaccess(domain, reverse_proxy_port=port)
 
     print("\nTODO ON SERVER")
     print("nano " + git_folder + "config.py")
