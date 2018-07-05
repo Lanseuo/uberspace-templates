@@ -88,7 +88,7 @@ setup(
     author="Lucas Hild",
     author_email="contact@lucas-hild.de",
     url="https://github.com/Lanseuo/uberspace-templates",
-    py_modules=["uberspace_templates"],
+    packages=["uberspace_templates", "uberspace_templates.templates"],
     install_requires=["click"],
     entry_points="""
         [console_scripts]
