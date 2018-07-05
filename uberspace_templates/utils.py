@@ -8,14 +8,14 @@ def get_username():
 
 def renew_letsencrypt():
     print("\nRenew LetsEncrypt")
-    os.system("mv /home/{}/.config/letsencrypt/cli.ini /home/{}/.config/letsencrypt/cli.ini.old").format(
-        get_username(), get_username())
+    os.system("mv /home/{}/.config/letsencrypt/cli.ini /home/{}/.config/letsencrypt/cli.ini.old".format(
+        get_username(), get_username()))
     os.system("uberspace-letsencrypt")
     os.system("letsencrypt certonly")
     live_certificate_folder = os.listdir(
-        "/home/{}/.config/letsencrypt/live").format(get_username())[0]
-    os.system("uberspace-add-certificate -k ~/.config/letsencrypt/live/{}/privkey.pem -c ~/.config/letsencrypt/live/{}/cert.pem").format(
-        live_certificate_folder, live_certificate_folder)
+        "/home/{}/.config/letsencrypt/live".format(get_username())[0])
+    os.system("uberspace-add-certificate -k ~/.config/letsencrypt/live/{}/privkey.pem -c ~/.config/letsencrypt/live/{}/cert.pem".format(
+        live_certificate_folder, live_certificate_folder))
 
 
 def ask_domain():
