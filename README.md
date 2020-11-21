@@ -57,5 +57,5 @@ uberspace-templates init website my-application
 
 ## Meta
 
-Lucas Hild - [https://lucas-hild.de](https://lucas.hild.de)  
+Lucas Hild - [https://lucas-hild.de](https://lucas-hild.de)  
 This project is licensed under the MIT License - see the LICENSE file for details
